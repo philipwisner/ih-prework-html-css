@@ -8,7 +8,34 @@ body {
   border: 1.5px solid rgb(225, 232, 237);
 	border-radius: 8px;
 	max-width: 800px;
-	margin: 0 auto;
+	margin: 20px auto;
+}
+
+#profile-pic {
+	height: 65px;
+	float: left
+}
+
+.user-info {
+	position: relative;
+	top: -35px;
+	left: 20px;
+}
+
+.user-account {
+	color: #000;
+	font-size: 27px;
+	font-weight: bold;
+	margin: 35px 0 0 0;
+}
+
+.username {
+	color: rgb(104, 109, 129);
+	font-size: 22px;
+	font-weight: 500;
+	margin: 0;
+	position: relative;
+	left: 60px;
 }
 
 #follow {
@@ -21,7 +48,7 @@ body {
 	border-radius: 10px;
 	padding: 10px 20px;
 	position: relative;
-	bottom: 175px;
+	bottom: 105px;
 	right: 35px;
 }
 
@@ -35,22 +62,38 @@ body {
 .top-text {
 	padding-left: 30px;
 	padding-top: 30px;
+
 }
 
-.body {
+.text-body {
 	padding-left: 30px;
+	position: relative;
+	top: -25px;
+}
+
+.bottom-icons {
+	height: 18px;
+}
+
+#time-date {
+	font-size: 18px;
+	color: rgb(101, 116, 127);
+}
+
+#reply {
+	position: relative;
+	left: -10px;
 }
 
 .icon-list li{
 	display: inline-block;
 	list-style-type: none;
-	padding-right: 10px;
+	padding-right: 15px;
 	padding-left: 0;
 	margin: 0;
+	color: rgb(105, 120, 130);
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 5px;
 }
-/*
-	- user name:         rgb(0, 0, 0)
-  - user account:      rgb(104, 109, 129)
-  - text:              rgb(0, 0, 0)
-  - date:              rgb(101, 116, 127)
-  - bottom text color: rgb(105, 120, 130)
+
