@@ -1,6 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: rgb(244, 248, 249);
-	font-family: Helvetica;
+	font-family: 'Helvetica';
 }
 
 .tweet-box {
@@ -9,6 +13,7 @@ body {
 	border-radius: 8px;
 	max-width: 800px;
 	margin: 20px auto;
+	max-height: 240px;
 }
 
 #profile-pic {
@@ -16,9 +21,21 @@ body {
 	float: left
 }
 
+#emoji-logo {
+	height: 22px;
+	position: relative;
+	top: 2px;
+}
+
+#certified {
+	height: 25px;
+	position: relative;
+	top: 2px;
+}
+
 .user-info {
 	position: relative;
-	top: -35px;
+	top: -38px;
 	left: 20px;
 }
 
@@ -27,6 +44,7 @@ body {
 	font-size: 27px;
 	font-weight: bold;
 	margin: 35px 0 0 0;
+	line-height: 35px;
 }
 
 .username {
@@ -40,20 +58,20 @@ body {
 
 #follow {
 	float: right;
-	border: 2px solid rgb(85, 172, 238);
+	border: 1.5px solid rgb(85, 172, 238);
 	color: rgb(85, 172, 238);
-	font-size: 1.75em;
+	font-size: 1.5em;
 	font-weight: bold;
 	background-color: inherit;
-	border-radius: 10px;
-	padding: 10px 20px;
+	border-radius: 8px;
+	padding: 8px 18px;
 	position: relative;
-	bottom: 105px;
+	top: -100px;
 	right: 35px;
 }
 
 #twitter-logo {
-	height: 25px;
+	height: 22px;
 	position: relative;
 	top: 2.5px;
 	right: 1px;
@@ -62,27 +80,37 @@ body {
 .top-text {
 	padding-left: 30px;
 	padding-top: 30px;
-
+	margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .text-body {
 	padding-left: 30px;
 	position: relative;
-	top: -25px;
+	top: -32px;
+	margin-bottom: 0;
 }
 
-.bottom-icons {
-	height: 18px;
+#tweet-body {
+	font-size: 22px;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 #time-date {
 	font-size: 18px;
 	color: rgb(101, 116, 127);
+	margin-top: 8px;
 }
 
 #reply {
 	position: relative;
 	left: -10px;
+}
+
+.icon-bar {
+	position: relative;
+	top: -28px;
 }
 
 .icon-list li{
@@ -97,3 +125,8 @@ body {
 	margin-bottom: 5px;
 }
 
+.bottom-icons {
+	height: 18px;
+	position: relative;
+	top: 3px;
+}
