@@ -5,7 +5,7 @@ var myRover = {
 };
 
 //Create a 10 x 10 grid for the rover
-var planetGrid = [[0,1,2,3,4,5,6,7,8,9,10],[0,1,2,3,4,5,6,7,8,9,10]];
+var planetGrid = [[0,1,2,3,4,5,6,7,8,9],[0,1,2,3,4,5,6,7,8,9]];
 
 /* Create an array?
 var array10 = new Array(lengthInput);
@@ -13,36 +13,8 @@ for (var i = 0; i <array10.length, i++) {
 	array10[i] = [];}
 */
 
-//Choice of inputs to change direction
-var inputs = {
-	'f': goForward,
-	'b': goBackward,
-	'r': rightTurn,
-	'l': leftTurn,
-};
-
 //Prompt for input of directions - Make it accept a string
 var promptIntro = "Move the rover by typing the following commands:\n f = Forward\n b = Backwards\n l = Left\n r = Right ";
-
-// Checking to see if prompt registers proper entry
-var inputDirection = prompt(promptIntro);
-switch (inputDirection.toLowerCase()) {
-	case 'f':
-		console.log('You moved forward')
-		break;
-	case 'b':
-		console.log('You moved backward')
-		break;
-	case 'l':
-		console.log('You moved left')
-		break;
-	case 'r':
-		console.log('You moved right')
-		break;
-	default:
-		console.log('Not valid')
-};
-
 
 //Function to move the rover forward - GIVEN
 function goForward(rover) {
@@ -99,7 +71,7 @@ function leftTurn(rover) {
       rover.direction = 'S'
       break;
   };
-		console.log("New Rover direction: " + rover.direction)
+		console.log("New Rover Direction: " + rover.direction)
 };
 
 //Function to turn the rover right - inverse of left
@@ -118,12 +90,63 @@ function rightTurn(rover) {
       rover.direction = 'N'
       break;
   };
-		console.log("New Rover direction: " + rover.direction)
+		console.log("New Rover Direction: " + rover.direction)
 };
 
+function roverMove(moves) {
+	for (var i = 0; i < moves.length; i++) {
+		switch (moves[i]){
+			case 'f':
+			goForward(myRover);
+			console.log('You moved forward');
+			break;
+			case 'b':
+			goBackward(myRover);
+			console.log('You moved backward');
+			break;
+			case 'l':
+			leftTurn(myRover);
+			console.log('You moved left');
+			break;
+			case 'r':
+			rightTurn(myRover);
+			console.log('You moved right');
+			break;
+			default:
+				console.log('Invalid input');
+		}
+	}
+	console.log('The rover is currently at ' + myRover.position[1] + myRover.position[2]);
+}
 
+roverMove('fffrfflfffbb');
 
-goForward(myRover);
+/*
+// Checking to see if prompt registers proper entry
+var inputDirection = prompt(promptIntro);
+switch (inputDirection.toLowerCase()) {
+	case 'f':
+		goForward(myRover);
+		console.log('You moved forward');
+		break;
+	case 'b':
+		goBackward(myRover);
+		console.log('You moved backward');
+		break;
+	case 'l':
+		leftTurn(myRover);
+		console.log('You moved left');
+		break;
+	case 'r':
+		rightTurn(myRover);
+		console.log('You moved right');
+		break;
+	default:
+		console.log('Not valid')
+};
+	console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
 
+// goForward(myRover);
+*/
 
 
