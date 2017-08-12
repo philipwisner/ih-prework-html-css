@@ -113,7 +113,18 @@ var inputMoves = window.prompt(promptIntro);
 			default:
 				console.log('Invalid input');
 		}
+		if (rover.position[0] === 10) {
+			rover.position[0] = 0;
+		} else if (rover.position[0] === -1) {
+			rover.position[0] = 10;
+		} else if (rover.position[1] === 10) {
+			rover.position[1] = 0;
+		} else if (rover.position[1] === -1) {
+			rover.position[1] = 10;
+		}
 	}
+
+
 //Output the rover's final position
 console.log("The rover is currently at: [" + myRover.position[0] + ", " + myRover.position[1] +"]" + " and facing " + myRover.direction);
 }
@@ -152,18 +163,3 @@ function roverMove(inputMoves) {
 
 //roverMove('fffrfflfffbb');
 
-/*
-
-		if (rover.position[0] = 10) {
-			rover.positon[0] = 0;
-		}
-		else if (rover.position[0] <= -1) {
-			rover.position[0] = 10;
-		}
-		else if (rover.position[1] >= 10) {
-			rover.position[1] = 0;
-		}
-		else if (myRover.position[1] <= -1) {
-			rover.position[1] = 10;
-		};
-*/
