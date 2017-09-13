@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(244, 248, 249);
+	font-family: 'Helvetica';
+}
+
+.tweet-box {
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid rgb(225, 232, 237);
+	border-radius: 8px;
+	max-width: 800px;
+	margin: 20px auto;
+	padding-bottom: 0;
+}
+
+.top-text {
+	padding-left: 30px;
+	padding-top: 30px;
+	margin-bottom: 0;
+	margin-bottom: 0;
+}
+
+.profile-pic {
+	height: 65px;
+	float: left;
+	border-radius: 5px;
+}
+
+.user-info {
+	position: relative;
+	top: -38px;
+	left: 20px;
+}
+
+.user-account {
+	color: #000;
+	font-size: 27px;
+	font-weight: bold;
+	margin: 35px 0 0 0;
+	line-height: 35px;
+}
+
+.emoji-logo {
+	height: 22px;
+	position: relative;
+	top: 2px;
+}
+
+.certified {
+	height: 25px;
+	position: relative;
+	top: 2px;
+}
+
+.username {
+	color: rgb(104, 109, 129);
+	font-size: 22px;
+	font-weight: 500;
+	margin: 0;
+	position: relative;
+	left: 60px;
+}
+
+.follow {
+	float: right;
+	border: 1.75px solid rgb(85, 172, 238);
+	color: rgb(85, 172, 238);
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: inherit;
+	border-radius: 8px;
+	padding: 8px 18px;
+	position: relative;
+	top: -100px;
+	right: 30px;
+}
+
+.twitter-logo {
+	height: 22px;
+	position: relative;
+	top: 2.5px;
+	right: 1px;
+}
+
+.text-body {
+	padding-left: 30px;
+	position: relative;
+	top: -32px;
+	margin-bottom: 0;
+}
+
+.tweet-body {
+	font-size: 22px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	max-width: 1500px;
+	line-height: 28px;
+}
+
+.time-date {
+	font-size: 18px;
+	color: rgb(101, 116, 127);
+	margin-top: 8px;
+}
+
+.icon-bar {
+	position: relative;
+	top: -28px;
+	margin: 0;
+}
+
+.icon-list {
+	margin-bottom: 0;
+}
+
+.icon-list li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 0 15px 0 0;
+	margin: 0;
+	color: rgb(105, 120, 130);
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.bottom-icons{
+	height: 18px;
+	position: relative;
+	top: 3px;
+}
+
+.reply {
+	position: relative;
+	left: -10px;
+}
+
+a {
+	text-decoration: none;
+	color: #2B7BB9;
+}
